@@ -3,7 +3,7 @@ import {
   UserButton,
 } from "@clerk/nextjs";
 
-const rootPage = () => {
+const RootPage = () => {
   return (
     <div>
       <UserButton afterSignOutUrl='/' />
@@ -11,4 +11,4 @@ const rootPage = () => {
   )
 }
 
-export default rootPage;
+export default RootPage;
