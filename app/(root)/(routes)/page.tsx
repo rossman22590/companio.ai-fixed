@@ -1,9 +1,14 @@
 import React from 'react'
+import {
+  UserButton,
+} from "@clerk/nextjs";
 
-const page = () => {
+const rootPage = () => {
   return (
-    <div>page</div>
+    <div>
+      <UserButton afterSignOutUrl='/' />
+    </div>
   )
 }
 
-export default page
+export default rootPage;
