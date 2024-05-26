@@ -12,13 +12,10 @@ export type CompanionKey = {
 export class MemoryManager {
   private static instance: MemoryManager;
   private history: Redis;
-  private vectorDBClient: Pinecone;
+  private vectorDBClient: Pinecone | undefined;
 
   public constructor() {
     this.history = Redis.fromEnv();
-    this.vectorDBClient = new Pinecone({
-      apiKey: process.env.PINECONE_API_KEY!,
-    });
   }
 
   public async init() {
