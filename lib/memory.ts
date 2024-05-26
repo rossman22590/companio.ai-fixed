@@ -51,6 +51,7 @@ export class MemoryManager {
       })
       .catch((err) => {
         console.log("Failed to search for similar documents", err);
+        return err;
       });
     return similarDocs;
   }
