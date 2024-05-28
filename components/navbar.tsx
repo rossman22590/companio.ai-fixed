@@ -36,7 +36,7 @@ const Navbar =({ isPro }: NavbarProps) => {
               font.className
             )}
           >
-            companio.ai
+         AI Tutor Characters
           </h1>
         </Link>
       </div>
