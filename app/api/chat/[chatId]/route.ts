@@ -53,7 +53,7 @@ export async function POST(
     const companionKey = {
       companionName: name!,
       userId: user.id,
-      modelName: "gpt-3.5-turbo",
+      modelName: "gpt-4o",
     };
 
     const memoryManager = await MemoryManager.getInstance();
@@ -86,7 +86,7 @@ export async function POST(
 
     const model = new ChatOpenAI({
       openAIApiKey: process.env.OPENAI_API_KEY,
-      modelName: "gpt-3.5-turbo",
+      modelName: "gpt-4o",
       callbackManager: CallbackManager.fromHandlers(handlers),
       verbose: true,
     });
