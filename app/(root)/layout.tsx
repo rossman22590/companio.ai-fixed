@@ -4,7 +4,7 @@ import { checkSubscription } from "@/lib/subscription";
 import React from "react";
 
 const MainLayout = async ({ children }: { children: React.ReactNode }) => {
-  const isPro = await checkSubscription();
+  const isPro = true;
   return (
     <div className="h-full">
       <Navbar isPro={isPro} />

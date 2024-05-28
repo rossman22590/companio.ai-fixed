@@ -2,7 +2,7 @@ import { SubscriptionButton } from "@/components/sub-button";
 import { checkSubscription } from "@/lib/subscription";
 
 const SettingsPage = async () => {
-  const isPro = await checkSubscription();
+  const isPro = true;
 
   return ( 
     <div className="h-full p-4 space-y-2">
