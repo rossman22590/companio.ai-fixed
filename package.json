@@ -10,7 +10,8 @@
     "prisma:push": "prisma db push",
     "prisma:deploy": "prisma migrate deploy",
     "prisma:generate": "prisma generate",
-    "prisma:seed": "prisma db seed"
+    "prisma:seed": "prisma db seed",
+    "postinstall": "prisma generate"
   },
   "dependencies": {
     "@clerk/nextjs": "^5.0.12",
